@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="description" content="This is the Meta Description">
+	<title>Project 13</title>
+	
+	<style>
+		#mouseevents_box {width:100px; height:100px; background-color:purple;}
+	</style>
+</head>
+
+<body>
+<h1>One</h1>
+<button id="alert_button">Alert</button>
+<script>
+	var alert_button = document.getElementById('alert_button');
+  	alert_button.addEventListener("click", function(){
+  	alert('Click click!');
+    console.log('I was clicked');
+  	});
+</script>
+  
+<h1>Two</h1>
+<button id="prompt_button">Prompt</button>
+<script>
+	var prompt_button = document.getElementById('prompt_button');
+	prompt_button.addEventListener("click", function(){
+	var name = prompt ('What is your name?');
+	console.log(name);
+	console.log(name);
+	console.log(name);
+	console.log(name);
+	console.log(name);
+	});
+</script>
+	
+<h1>Three</h1>
+<script>
+	var rainbow_array = ["Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet"];
+  	for (i = 0; i <= 0; i++) {
+  	document.write('Red<br>');
+  	document.write('Orange<br>');
+  	document.write('Yellow<br>');
+  	document.write('Green<br>');
+  	document.write('Blue<br>');
+  	document.write('Indigo<br>');
+  	document.write('Violet<br>');
+    console.log(rainbow_array[i]);
+  };
+</script>
+
+<h1>Four</h1>
+<div id="mouseevents_box"></div>
+<script>
+	var mouseevents_box = document.getElementById('mouseevents_box');
+	mouseevents_box.addEventListener("mouseover", function(){
+	console.log('Mouse entered the box');
+	})
+	var mouseevents_box = document.addEventListener("mouseout", function(){
+	console.log('Mouse left the box');
+	});
+</script>
+
+<h1>Five</h1>
+<input type="text" id="first_box">
+<input type="text" id="second_box">
+<button id="check_button">Check</button>
+<script>
+  var check_button = document.getElementById('check_button');
+  	check_button.addEventListener("click", function() {
+  	var first_box = document.getElementById('first_box').value
+  	var second_box = document.getElementById('second_box').value
+  	if(first_box == second_box) {
+  	alert('They are equal!');
+    console.log('Equal!');}
+    else  {
+    alert('Nope!');}
+  	});
+  </script>
+
+</body>
+
+</html>
