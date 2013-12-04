@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Project 15</title>
+	<style>
+		html {margin:1em; font-family:Helvetica, Arial, sans-serif;}
+		h2 {clear:both;}
+		.box {width:200px; height:200px; border:1px solid #000; background-color:#ddd;}
+	</style>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
+<body>
+  <header><h1>Project 15</h1></header>
+
+  <h2>Source and Target</h2>
+  <h3>Source</h3>
+  <input type="text" id="text1" placeholder="Type here">
+  <h3>Target</h3>
+  <input type="text" id="text2" readonly="true" placeholder="Echo the result here">
+  <script>
+	$('#text1').on('keyup', function(){
+    var $newText = $('#text1').val();
+    $('#text2').val($newText);
+	});
+  </script>
+
+  <hr>
+
+  <h2>Image Swap</h2>
+  <img id="pup" src="http://media-cache-ak0.pinimg.com/736x/58/c1/6a/58c16a1fdf89ad866802533934dfd3c0.jpg" title="A puppy" alt="A puppy"><br>
+  <input type="text" id="get_img" placeholder="Enter URL"><button id="update-img">Update</button>
+  <script>
+	$('#update-img').on("click", function() {
+		var $pic = $('#get_img').val();
+		var $pup = $('#pup');
+			$pup.attr('src', $pic);
+	});	
+  </script>
+
+  <hr>
+
+  <h2>Font Sizer</h2>
+  <p id="to-style">This is my paragraph of stuff.</p><br>
+  <input type="text" id="font-size" placeholder="Enter a font size"><button id="font-button">Make it so</button>
+  <script>
+	var $paragraph = $('#to-style');
+		$('#font-button').on('click', function(){
+			var $newSize = $('#font-size').val()
+			$paragraph.css({"font-size": $newSize}); });
+  </script>
+
+  <hr>
+
+  <h2>Attribute Reporter</h2>
+  <img id="kitten2" src="http://placekitten.com/g/300/200" title="A kitten" alt="A kitten"><br>
+  <button id="get_attr">Log Attributes</button>
+  <script>
+  	$('#get_attr').on("click", function() {
+  	var input = $('#kitten2');
+		console.log(input.attr('src'));
+		console.log(input.attr('alt'));
+		});
+  </script>
+
+  <hr>
+
+  <h2>Element Counter</h2>
+  <input type="text" id="element-type" placeholder="Which element?"><br>
+  <button id="count">Count the Elements</button>
+  <input type="text" id="element-count" placeholder="Results here" readonly="true">
+  <script>
+	
+	$('#count').on("click", function(){
+		var $val = $('#element-type').val();
+		var $headersByAll = $($val);
+		$('#element-count').val($headersByAll.length);
+		var $textcount = $('#element-count');
+		console.log($headersByAll.size());
+		});
+  </script>
+
+
+
+
+</body>
+
+</html>
