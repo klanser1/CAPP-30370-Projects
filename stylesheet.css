@@ -1,0 +1,14 @@
+body {
+	background-color: #FFA6A3;
+	font-family: sans-serif;
+	}
+h1 {
+	color: #7471CD;
+	text-transform: uppercase;
+	}
+h2 {
+	font-size: 1em;
+	}
+th, td {border:1px solid gray}
+
+figcaption {font-size: .75em}
