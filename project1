@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="description" content="This 		 is the Meta Description">
+	<title>Kathy Lanser</title>
+	<style>
+		body {
+			background-color: #FFA6A3;
+			font-family: sans-serif;
+			}
+		h1 {
+			color: #7471CD;
+			text-transform: uppercase;
+			}
+		h2 {
+			font-size: 1em;
+			}
+	</style>
+</head>
+
+<body>
+
+<h1>Kathy Lanser<br><img src="switzerland.png" alt="Kathy hiking"></h1>
+
+<h2>Top 3 Pizza Toppings</h2>
+<ol>
+	<li>Pineapple</li>
+	<li>Mushrooms</li>
+	<li>Bacon</li>
+</ol>
+
+<h2>Great South Bend Bars</h2>
+<ul>
+	<li>The 'Backer</li>
+	<li>Brothers</li>
+	<li>Finny's</li>
+</ul>
+
+</body>
+
+</html>
